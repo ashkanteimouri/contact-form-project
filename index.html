@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact-form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="section">
+      <h1>Contact Us</h1>
+      <form class="form" action="">
+        <div class="name-lastname-input">
+          <div class="name">
+            <label for="name"
+              >First Name <span class="text-primary">*</span></label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Please enter your name"
+            />
+            <p class="error">This field is required</p>
+          </div>
+          <div class="lastname">
+            <label for="lastname"
+              >Last Name <span class="text-primary">*</span></label
+            >
+
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder="Please enter your last name"
+            />
+            <p class="error">This field is required</p>
+          </div>
+        </div>
+        <div class="email">
+          <label for="email"
+            >Email Address <span class="text-primary">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="youremail@example.com"
+          />
+          <p class="error">Please enter a valid email address</p>
+        </div>
+        <div class="query-box">
+          <h2>Query Type <span class="text-primary">*</span></h2>
+          <div class="query-type-box">
+            <div class="general-box">
+              <div class="general-enquiry">
+                <input
+                  type="checkbox"
+                  id="general-enquiry"
+                  name="general-enquiry"
+                />
+                <label for="general-enquiry">General Enquiry</label>
+              </div>
+            </div>
+            <div class="support-box">
+              <div class="support-request">
+                <input
+                  type="checkbox"
+                  id="support-request"
+                  name="support-request"
+                />
+                <label for="support-request">Support Request</label>
+              </div>
+            </div>
+          </div>
+          <p class="error query-box-error">Please select aquery type</p>
+        </div>
+        <div class="message">
+          <label for="message"
+            >Message <span class="text-primary">*</span></label
+          >
+
+          <input
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Enter your message"
+          />
+          <p class="error">This field is required</p>
+        </div>
+        <div class="checkbox-section">
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox" name="checkbox" />
+            <label for="checkbox"
+              >I consent to being cotacted by the team
+              <span class="text-primary">*</span></label
+            >
+          </div>
+          <p class="error checkbox-error">
+            To submit this form,please consent to being contacted
+          </p>
+        </div>
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
